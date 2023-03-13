@@ -1,0 +1,15 @@
+.del{
+    margin-left: auto;
+}
+.txt{
+    font-weight: 700;
+}
+.btn-del{
+    color: white;
+    background: #d94e3b;
+    margin-left: auto;
+    border: none;
+}
+.fa{
+    padding: 5px;
+}

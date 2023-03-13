@@ -1,0 +1,87 @@
+<div class="container-fuild">
+  <div class="card card0">
+    <div class="d-flex flex-lg-row flex-column-reverse">
+      <div class="card card2">
+        <div class="my-auto cardbody mx-md-5 px-md-5 right">
+          <p class="cardtitle"><span>Digital </span>Platform</p>
+          <p class="cardtitle">for distance <span> learning</span></p>
+          <small class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.</small>
+        </div>
+      </div>
+      <div class="card card1">
+        <div class="row justify-content-center my-auto">
+          <div class="col-md-8 col-10 my-5">
+            <div class="row text-center px-3 mb-3">
+              <!-- <img id="logo" src="https://i.imgur.com/PSXxjNY.png"> -->
+              <h1>Your <span style="    color: #d94e3b;">Logo</span><span style=" font-size: 12px;   vertical-align: super;"><i class="fa fa-registered" aria-hidden="true"></i></span></h1>
+            </div>
+            <div class="text-center" style="margin-top: 80px;
+            margin-bottom: 20px;">
+              <span>
+                <i style="font-size: 25px; color: red;" class="fa fa-lock" aria-hidden="true"></i>
+              </span>
+            </div>
+            <h3 class="mb-5 text-center heading">Welcom back</h3>
+
+            <!-- form start -->
+
+            <!-- main form -->
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+              <div class="single-input">
+                <span><i class="fa fa-user" aria-hidden="true"></i></span>
+                <input type="text" formControlName="username" placeholder="Username">
+
+              </div>
+              <span class="error-message" *ngIf="!loginForm.get('username')!.valid && loginForm.get('username')!.touched">
+                Username is required
+            </span>
+              <div class="single-input">
+                <span><i class="fa fa-lock" aria-hidden="true"></i></span>
+                <input type="password" formControlName="password" placeholder="Password">
+
+              </div>
+              <span class="error-message" *ngIf="!loginForm.get('password')!.valid && loginForm.get('password')!.touched ">
+                <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Please enter atleast 8 character with number,symbol,capital & small latter
+            </span>
+              <div class="row justify-content-end my-2">
+                <a href="#" style="text-align: end; width: auto ;"><small class="text-muted">Forgot
+                    Password?</small></a>
+              </div>
+              <div class="single-input submit-btn">
+                <button type="submit" class="submit-button" (click)="onSubmit()"> Login</button>
+              </div>
+            </form>
+
+
+
+            <!-- <h6 class="msg-info">Please login to your account</h6> -->
+            <!--
+                      <div class="form-group">
+                          <label class="form-control-label text-muted">Username</label>
+                          <input type="text" id="email" name="email" placeholder="Phone no or email id" class="form-control">
+                      </div>
+
+                      <div class="form-group">
+                          <label class="form-control-label text-muted">Password</label>
+                          <input type="password" id="psw" name="psw" placeholder="Password" class="form-control">
+                      </div>
+                      <div class="row justify-content-center my-2">
+                        <a href="#"><small class="text-muted">Forgot Password?</small></a>
+                    </div>
+                      <div class="row justify-content-center my-3 px-3">
+                          <button class="btn-block btn-color">Login to Tidi</button>
+                      </div> -->
+
+
+          </div>
+        </div>
+        <div class="bottom text-center mb-5">
+          <p href="#" class="sm-text mx-auto mb-3">Don't have an account?<span style="font-weight: 600;"> Sign Up</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

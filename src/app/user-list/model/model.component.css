@@ -1,0 +1,13 @@
+.btn-del{
+    color: white;
+    background: #d94e3b;
+    border: none;
+    width: 70px;
+}
+.btn-can{
+    margin-left: 5px;
+    color: black;
+    background: #fff;
+    border: 1px solid gray;
+    width: 70px;
+}
